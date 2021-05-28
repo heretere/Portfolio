@@ -1,0 +1,20 @@
+/* If the viewport is at least medium (>800px) make the images show up */
+body > header > div.header-logo > div > img,
+body > header > div.theme-switcher > div > img {
+    display: block;
+}
+
+/* Make the nav take up 80vw instead of 100vw so images properly appear */
+body > header > nav {
+    flex: 3 3 80vw;
+}
+
+/* make content take up 80vw instead of 100vw so the background spacers properly appear */
+main > div.content {
+    flex: 3 3 80vw;
+}
+
+/* force the spacers to take up 10vw so everything gets properly formatted */
+.spacer {
+    flex: 1 1 10vw;
+}

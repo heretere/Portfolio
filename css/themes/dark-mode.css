@@ -1,0 +1,21 @@
+/*
+    Decided to add theming cause I thought it would be a fun thing to add.
+    I learned this setup from
+    (https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2)
+
+    applied my own twist to show that I understand the code
+ */
+
+/* This css file is used to create variables for the all-and-small.css */
+/* These variables are used specifically for the dark-mode theme */
+
+/* Defining the color variables for this theme */
+.dark-mode {
+    --color-primary: #2c3e50;
+    --color-secondary: #34495e;
+    --color-accent: #6c5ce7;
+    --color-background: #2d3436;
+    --color-background-secondary: #636e72;
+    --text-color: #dfe6e9;
+    --text-color-invert: #dfe6e9;
+}

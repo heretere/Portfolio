@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="light-mode" lang="en">
+<head>
+    <title>Heretere's Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="My portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- normalize css from cdn link tag retrieved from (https://cdnjs.com/libraries/normalize) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+          integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- fonts from google cdn -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- font used for regular text -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!--  dark mode css  -->
+    <link rel="stylesheet" href="css/themes/dark-mode.css">
+    <!-- light mode css -->
+    <link rel="stylesheet" href="css/themes/light-mode.css">
+    <!-- default css used for styling and mobile -->
+    <link rel="stylesheet" href="css/viewports/all-and-small.css" media="all">
+    <!-- css alterations for medium and greater -->
+    <link rel="stylesheet" href="css/viewports/medium-or-greater.css"
+          media="(min-width: 800px) and (max-aspect-ratio: 2/1)">
+<body>
+
+<header>
+    <!--  Used to show the logo in the top left  -->
+    <div class="spacer header-logo">
+        <div class="circle">
+            <img src="img/logo.png" alt="Heretere" width="400" height="400">
+        </div>
+    </div>
+    <!--  Navigation bar  -->
+    <nav id="header-nav">
+        <a class=" active" href="#intro">Intro</a>
+        <a href="#about-me">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!--  Used to switch the theme between light & dark mode  -->
+    <div class="spacer theme-switcher">
+        <div class="circle toggle" onclick="toggleTheme();">
+            <img id="switch" src="img/sun.svg" width="400" height="400" alt="Light Mode">
+        </div>
+    </div>
+</header>
+
+<!-- Used to make sure content of the page doesn't get obstructed by the floating header -->
+<div class="header-spacer"></div>
+
+<!-- The content of the page  -->
+<main>
+    <div id="intro" class="spacer alt-background"></div>
+    <div class="content">
+        <article>
+            <header>
+                <h1 class="center-text">Intro</h1>
+            </header>
+            <div>
+                <h2>Hey, My Name is Justin Heflin</h2>
+                <h3>I am an aspiring software engineer living near Atlanta, Georgia.</h3>
+                <br>
+                <br>
+                <h4>Things I want to learn more about: </h4>
+                <ul>
+                    <li>Proper web development workflow</li>
+                    <li>Useful JavaScript libraries to improve my workflow</li>
+                    <li>Interesting backend development techniques</li>
+                </ul>
+                <br>
+                <br>
+                <p>Take a look around my website and let me know what you think of it!</p>
+            </div>
+        </article>
+        <hr id="about-me" class="spacer alt-background">
+        <article>
+            <header>
+                <h1 class="center-text">About Me</h1>
+            </header>
+            <div>
+
+                <h3>Previous Experience & Future Aspirations: </h3>
+                <p>I have been programming for quite a while mainly backend programming.</p>
+                <p>I am excited to learn web based programming to help me land front-facing jobs in the technology
+                    field.</p>
+                <p>I'm excited to work with others to help me build up a practical programming portfolio that will
+                    allow me to come out ahead in the sea of programmers.</p>
+
+                <h3>Other Info About Me: </h3>
+                <p>A part from web development, I am heavily interested in Java. I'm excited to learn more about
+                    JavaScript and it's differences from Java.</p>
+            </div>
+        </article>
+        <hr id="contact" class="spacer alt-background">
+        <article>
+            <header>
+                <h1 class="center-text">Contact</h1>
+            </header>
+            <div>
+                <h3>If you have any questions for me, or want to reach out to me for something new.</h3>
+                <h3>Feel free to contact me!</h3>
+
+                <h4>You can contact me using the links below: </h4>
+                <ol>
+                    <li>
+                        <a href="https://www.linkedin.com/in/justin-heflin" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/heretere" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="mailto:teirten@gmail.com?subject=About Your Portfolio" target="_blank">teirten@gmail.com</a>
+                    </li>
+                </ol>
+            </div>
+        </article>
+        <hr class="spacer alt-background">
+    </div>
+    <div class="spacer alt-background"></div>
+</main>
+
+<footer>
+    <p class="center-text">&copy; Justin Heflin; MIT License</p>
+</footer>
+
+<!-- JavaScript used to switch the theme from light & dark mode -->
+<script src="js/theme-switcher.js"></script>
+<!-- JavaScript used to switch which link on the navbar is active -->
+<script src="js/active-switcher.js"></script>
+</body>
+</html>
